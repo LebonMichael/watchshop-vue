@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../asset/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.2.26/dist/vue.global.js"></script>
+    <title>Watches Shop</title>
+</head>
+<body>
+<header>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <div class="col-lg-2">
+                        <a class="navbar-brand" href="#">
+                            <img alt="" src="../../asset/images/joomla-watches-shop-logo.png">
+                        </a>
+                    </div>
+                    <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                            class="navbar-toggler" data-bs-target="#navbarSupportedContent"
+                            data-bs-toggle="collapse" type="button">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="col-lg-10">
+                            <ul class="navbar-nav d-flex justify-content-evenly me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a aria-current="page" class="nav-link active" href="../../index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a aria-current="page" class="nav-link active"
+                                       href="producten.html">Producten</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a aria-current="page" class="nav-link active"
+                                       href="contact.html">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a aria-current="page" class="nav-link active" href="blog.html">Blog</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 text-center">
+                            <a class="btn" href="myCart.html"><i class="bi bi-cart4"></i></a>
+                            <a class="btn"><i class="bi bi-search"></i></a>
+                            <a class="btn"><i class="bi bi-person-circle"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container-fluid">
+        <div class="row">
+            <h1 class="text-center my-3">Your Shopping Cart</h1>
+            <div class="row mx-auto">
+                <div class="col-lg-8 offset-lg-2">
+                    <!--/** Desktop vorm **/-->
+                    <div id="app">
+                        <product-weergave></product-weergave>
+                    </div>
+                    <!--/** Mobiele vorm **/-->
+                    <div class="d-sm-none text-center">
+                        <div>
+                            <img class="img-fluid" src="../images/hugo-boss-350x250.png" alt="">
+                            <div class="row mt-3 ">
+                                <div class="col-6">
+                                    <p class="fw-bold m-0">Product</p>
+                                    <p>Hugo Boss</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="fw-bold m-0">Price</p>
+                                    <p>€390.00</p>
+                                </div>
+                            </div>
+                           <div class="row mt-3">
+                               <div class="col-6">
+                                   <p class="fw-bold">Quantity</p>
+                                   <div class="text-center">
+                                       <label for="quantity1-1" class="a-native-dropdown me-2"></label>
+                                       <select name="quantity" autocomplete="off" id="quantity1-1" tabindex="0"
+                                               data-action="a-dropdown-select" class="a-native-dropdown a-declarative">
+                                           <option value="1" selected="">1</option>
+                                           <option value="2">2</option>
+                                           <option value="3">3</option>
+                                           <option value="4">4</option>
+                                           <option value="5">5</option>
+                                           <option value="6">6</option>
+                                           <option value="7">7</option>
+                                           <option value="8">8</option>
+                                           <option value="9">9</option>
+                                           <option value="10">10</option>
+                                       </select>
+                                   </div>
+                               </div>
+                               <div class="col-6">
+                                   <p>Total</p>
+                                   <p>€390.00</p>
+                               </div>
+                           </div>
+                            <button type="button" class="btn btn-secondary my-auto my-3">Remove</button>
+                        </div>
+                        <hr>
+                        <div>
+                            <img class="img-fluid" src="../images/hugo-boss-350x250.png" alt="">
+                            <div class="row mt-3 ">
+                                <div class="col-6">
+                                    <p class="fw-bold m-0">Product</p>
+                                    <p>Hugo Boss</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="fw-bold m-0">Price</p>
+                                    <p>€390.00</p>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <p class="fw-bold">Quantity</p>
+                                    <div class="text-center">
+                                        <label for="quantity1-2" class="a-native-dropdown me-2"></label>
+                                        <select name="quantity" autocomplete="off" id="quantity1-2" tabindex="0"
+                                                data-action="a-dropdown-select" class="a-native-dropdown a-declarative">
+                                            <option value="1" selected="">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <p>Total</p>
+                                    <p>€390.00</p>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-secondary my-auto my-3">Remove</button>
+                        </div>
+                        <hr>
+                        <div>
+                            <p>Total products (2)</p>
+                            <p class="fw-bold">€780.00</p>
+                            <p>Verzendingskosten</p>
+                            <p class="fw-bold">€4.99</p>
+                            <hr>
+                            <p>Totaal</p>
+                            <p class="fw-bold">€784.99</p>
+                            <div>
+                                <a href="checkout.html" class="btn btn-outline-primary">Betalen</a>
+                            </div>
+                            <p class="my-3">of</p>
+                            <div>
+                                <a href="producten.html" class="btn btn-outline-success">Verder winkelen</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3 bg-grey">
+            <div class="col-lg-10 offset-lg-1">
+                <div class="row row-cols-lg-4 row-cols-sm-2 text-center my-4">
+                    <div class="my-2 link">
+                        <h5>OUR CONTACT</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, neque.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, explicabo.</p>
+                        <a href="tel:+32494754693">+32 494 75 46 93</a>
+                        <br>
+                        <a href="mailto:lebontje45@hotmail.com">lebontje45@hotmail.com</a>
+                    </div>
+                    <div class="my-2">
+                        <h5>COMPANY</h5>
+                        <div class="row row-cols-1 link">
+                            <!-- Button trigger modal -->
+                            <a href="#WhatWeDo" data-bs-toggle="modal" data-bs-target="#WhatWeDo">What We Do</a>
+                            <!-- Modal -->
+                            <div class="modal fade" id="WhatWeDo" tabindex="-1" aria-labelledby="exampleWhatWeDo"
+                                 aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content ">
+                                        <div class="modal-header ">
+                                            <h5 class="modal-title " id="exampleWhatWeDo">What We Do</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab amet animi
+                                                dicta distinctio ducimus earum, eligendi est ipsam labore magnam minima
+                                                necessitatibus quaerat quis ratione repellat repudiandae sed voluptatem
+                                                voluptatum!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#AvailableServices" data-bs-toggle="modal" data-bs-target="#AvailableServices">Available
+                                Services</a>
+                            <!-- Modal -->
+                            <div class="modal fade" id="AvailableServices" tabindex="-1"
+                                 aria-labelledby="exampleAvailableServices" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleAvailableServices">Available
+                                                Services</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab amet animi
+                                                dicta distinctio ducimus earum, eligendi est ipsam labore magnam minima
+                                                necessitatibus quaerat quis ratione repellat repudiandae sed voluptatem
+                                                voluptatum!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="../../index.html#latestNews">Latest Posts</a>
+                            <a href="#faqs" data-bs-toggle="modal" data-bs-target="#faqs">FAQs</a>
+                            <div class="modal fade" id="faqs" tabindex="-1" aria-labelledby="exampleFaqs"
+                                 aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleFaqs">FAQs</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab amet animi
+                                                dicta distinctio ducimus earum, eligendi est ipsam labore magnam minima
+                                                necessitatibus quaerat quis ratione repellat repudiandae sed voluptatem
+                                                voluptatum!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="#DeliveryInfo" data-bs-toggle="modal" data-bs-target="#DeliveryInfo">Delivery
+                                Inforamtion</a>
+                            <!-- Modal -->
+                            <div class="modal fade" id="DeliveryInfo" tabindex="-1"
+                                 aria-labelledby="exampleDeliveryInfo" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleDeliveryInfo">Delivery Inforamtion</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab amet animi
+                                                dicta distinctio ducimus earum, eligendi est ipsam labore magnam minima
+                                                necessitatibus quaerat quis ratione repellat repudiandae sed voluptatem
+                                                voluptatum!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="#PrivacyPolicy" data-bs-toggle="modal" data-bs-target="#PrivacyPolicy">Privacy
+                                Policy</a>
+                            <!-- Modal -->
+                            <div class="modal fade" id="PrivacyPolicy" tabindex="-1"
+                                 aria-labelledby="examplePrivacyPolicy" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="examplePrivacyPolicy">Privacy Policy</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab amet animi
+                                                dicta distinctio ducimus earum, eligendi est ipsam labore magnam minima
+                                                necessitatibus quaerat quis ratione repellat repudiandae sed voluptatem
+                                                voluptatum!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-2 link">
+                        <h5>PROFILE</h5>
+                        <div class="row row-lg-cols-1 link">
+                            <a href="myCart.html">My Cart</a>
+                            <a href="#AboutUs" data-bs-toggle="modal" data-bs-target="#AboutUs">About Us</a>
+                            <!-- Modal -->
+                            <div class="modal fade" id="AboutUs" tabindex="-1" aria-labelledby="exampleAboutUs"
+                                 aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content ">
+                                        <div class="modal-header ">
+                                            <h5 class="modal-title " id="exampleAboutUs">About Us</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab amet animi
+                                                dicta distinctio ducimus earum, eligendi est ipsam labore magnam minima
+                                                necessitatibus quaerat quis ratione repellat repudiandae sed voluptatem
+                                                voluptatum!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-2">
+                        <h5>CONTACT FORM</h5>
+                        <form method="post" action="mailto:lebontje45@hotmail.com">
+                            <div class="input-group mb-3">
+                                <label for="firstName"></label>
+                                <input id="firstName" name="FirstName" value="" type="text" placeholder="First name"
+                                       aria-label="First name" class="form-control">
+                            </div>
+                            <div class="input-group mb-3">
+                                <label for="lastName"></label>
+                                <input id="lastName" name="LastName" value="" type="text" placeholder="Last name"
+                                       aria-label="Last name" class="form-control">
+                            </div>
+                            <div class="input-group mb-3">
+                                <label for="email"></label>
+                                <input id="email" name="email" value="" type="email" class="form-control"
+                                       placeholder="Email address" aria-label="email"
+                                       aria-describedby="email">
+                            </div>
+                            <div class="input-group">
+                                <label for="tekst"></label>
+                                <textarea id="tekst" name="Bericht" class="form-control"
+                                          aria-label="With textarea"></textarea>
+                            </div>
+                            <div class="my-2">
+                                <button type="submit" class="btn btn-secondary">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-sm-8 offset-sm-2">
+                    <form class="">
+                        <div class="row w-100 m-0">
+                            <div class="col-lg-4">
+                                <!--<label for="userName"></label>-->
+                                <input id="userName" name="userName" value="" type="text" placeholder="Username"
+                                       aria-label="Username" class="form-control">
+                            </div>
+                            <div class="col-lg-4">
+                                <input type="password" placeholder="Password" class="form-control"
+                                       id="exampleInputPassword1">
+                                <label for="exampleInputPassword1" class="form-label"></label>
+                            </div>
+                            <div class="col-lg-auto">
+                                <button type="submit" class="btn btn-secondary w-100">Log In</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-check my-3">
+                                <div class="row row-cols-sm-3 mx-3">
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
+                                        <label class="form-check-label" for="autoSizingCheck2">
+                                            Remember me
+                                        </label></div>
+                                    <div class="link"><a href="#">Forgot Password</a></div>
+                                    <div class="link">
+                                        <a href="#">Forgot Username</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="row text-center">
+                    <div class="link my-3">
+                        <a href="#"><i class="bi bi-facebook mx-3"></i></a>
+                        <a href="#"><i class="bi bi-instagram mx-3"></i></a>
+                        <a href="#"><i class="bi bi-twitter mx-3"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="container-fluid bg-grey">
+        <div class="row text-center">
+            <p>© copyright 2021</p>
+        </div>
+    </div>
+</footer>
+<script src="../../asset/js/bootstrap.min.js"></script>
+<script src="../js/main.js"></script>
+<script src="../../componenten/shopCart.js"></script>
+<script>const mountedApp = app.mount('#app')</script>
+</body>
+</html>

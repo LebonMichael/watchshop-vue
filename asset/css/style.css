@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "MS";
+    src: url("../font/PlayfairDisplay-Black.ttf");
+}
+body{
+    font-family: PfD;
+}
+.img-place{
+    position: relative;
+    align-content: space-between;
+}
+.img-text{
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -10%);
+}
+.img-text2{
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -90%);
+}
+.link a{
+    color: black;
+    text-decoration: none;
+}
+.link a:hover{
+    color: blue;
+}
+.test_skill {
+    border: 2px solid red;
+}
+.bg-grey{
+    background-color: rgba(245, 245, 245,1);
+}
+.bg-img{
+    background-image: url("../images/itp_bg.png");
+    background-attachment: fixed;
+    padding: 5%;
+    background-size: cover;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; // remove the gap so it doesn't close
+}
+.kleurvak{
+    height: 50px;
+    width: 50px;
+    border: 2px solid grey;
+}
+
+
+
